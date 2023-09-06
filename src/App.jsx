@@ -5,7 +5,6 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-
       <div className="routes">
         <Routes>
           <Route exact path="/" element={<Homepage />} />
