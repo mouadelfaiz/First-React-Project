@@ -1,15 +1,22 @@
 import { useEffect, useState } from "react";
 import "./App.css";
+import NavBar from "./components/NavBar";
+import Details from "./Pages/Details";
+import HomePage from "./Pages/HomePage";
+import Pokelist from "./Pages/Pokelist";
+import About from "./Pages/About";
+import { Routes, Route } from "react-router-dom";
 
 function App() {
   return (
     <div className="App">
-      <Navbar />
+      <NavBar />
       <div className="routes">
         <Routes>
-          <Route exact path="/" element={<Homepage />} />
-          <Route exact path="/pokelist" element={<Pokelist />} />
-          <Route exact path="/pokedetails" element={<Details />} />
+          <Route path="/" element={<HomePage />} />
+          <Route path="/pokemonlist" element={<Pokelist />} />
+          <Route path="/pokedetails" element={<Details />} />
+          <Route path="/about" element={<About />} />
         </Routes>
       </div>
     </div>
