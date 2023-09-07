@@ -1,21 +1,22 @@
 import React from "react";
 import "../Styles/Navbr.css"
+import { Link } from "react-router-dom";
 
 export default function NavBar() {
   return (
     <nav className="nav">
-      <a href="/" className="HomeTitle">
+      <Link to="/" className="HomeTitle">
         Home
-      </a>
+      </Link>
       <ul>
         <li>
-          <a href="/pokemonlist">Pokemon Card</a>
+          <Link to="/pokemonlist">Pokemon Card</Link>
         </li>
         <li>
-          <a href="/pokedetails">Pokemon Details</a>
+          <Link to="/pokedetails">Pokemon Details</Link>
         </li>
         <li>
-          <a href="/about">About</a>
+          <Link to="/about">About</Link>
         </li>
       </ul>
     </nav>
