@@ -1,10 +1,12 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import "../Styles/Homepage.css"
 
 export default function HomePage() {
  
   return (
     <div>
+      <img className='pkemon-image' src="https://assets.pokemon.com/assets/cms2/img/misc/gus/buttons/logo-pokemon-79x45.png" alt="Pokemon-image" />
       <div className='container'>
         <div className='in-container'>
           <p className='in-container-text'>
