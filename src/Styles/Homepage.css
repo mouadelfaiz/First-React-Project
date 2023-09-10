@@ -1,0 +1,46 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+
+.in-container {
+  text-align: center;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.in-container-text {
+  font-size: 20px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+
+.home-button {
+  background-color: #ff6600;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.home-button:hover {
+  background-color: #ff4500;
+}
+
+.pkemon-image {
+  display: block;
+  margin: 0 auto;
+  width: 79px; 
+  height: 45px; 
+  margin-bottom: 20px;
+}
