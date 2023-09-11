@@ -1,6 +1,5 @@
-import React, { Children } from "react";
-import "../Styles/Navbr.css";
 import { Link, useMatch, useResolvedPath } from "react-router-dom";
+import "../Styles/navBar.css"
 
 export default function NavBar() {
   return (
