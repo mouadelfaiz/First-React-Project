@@ -1,5 +1,6 @@
 /* styles.css */
 .pokemon-card {
+  display: inline-flex;
   border: 1px solid #ccc;
   padding: 16px;
   margin: 16px;

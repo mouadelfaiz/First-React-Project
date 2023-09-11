@@ -3,7 +3,10 @@ import Pokecard from '../components/Pokecard';
 import "../Styles/pokeList.css"
 
 export default function PokelistPage() {
-  const pokemonIds = [1, 2, 3, 4, 5]; // You can add more Pokémon IDs here
+  const pokemonIds = [];
+  for (let i = 1; i < 150; i ++) {
+    pokemonIds.push(i)
+  }
 
   return (
     <div className="pokemon-list">
