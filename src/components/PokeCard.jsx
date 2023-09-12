@@ -1,10 +1,11 @@
 import React from 'react'
 import {useState, useEffect} from 'react';
 
-export default function Pokecard({pokemonId}) {
+export default function Pokecard({pokemonId,}) {
   const [pokemonData, setPokemonData] = useState(null);
 
   useEffect(() => {
+
     fetch(`https://pokeapi.co/api/v2/pokemon/${pokemonId}`)
       .then((response) => response.json())
       .then((data) => setPokemonData(data));

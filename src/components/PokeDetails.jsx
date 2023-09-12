@@ -37,7 +37,7 @@ export default function PokeDetails({pokemonName}) {
           <li key={type.type.name}>{type.type.name}</li>
         ))}
       </ul>
-      {/* Display evolution information here */}
+      {}
     </div>
   );
 };
