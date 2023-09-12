@@ -7,9 +7,7 @@ const AboutPage = () => {
     <div className="about-page">
       <h1>About Pokedex</h1>
       <p>
-        The Pokedex is an essential tool for any Pokémon Trainer. It's a
-        comprehensive electronic device that records information about
-        Pokémon and helps trainers on their journey to become Pokémon Masters.
+        I made this pokedex using Pokemon API and using React labrary.
       </p>
       <p>
         With the Pokedex, trainers can:

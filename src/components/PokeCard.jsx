@@ -5,7 +5,6 @@ export default function Pokecard({pokemonId}) {
   const [pokemonData, setPokemonData] = useState(null);
 
   useEffect(() => {
-    // Fetch data for the specified Pokémon using the Pokémon API
     fetch(`https://pokeapi.co/api/v2/pokemon/${pokemonId}`)
       .then((response) => response.json())
       .then((data) => setPokemonData(data));
