@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import PokeDetails from '../components/PokeDetails';
+import axios from 'axios';
+axios
 
 export default function DetailsPage() {
   const [pokemonNames, setPokemonNames] = useState([]);
