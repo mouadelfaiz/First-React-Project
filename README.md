@@ -1,4 +1,4 @@
-# PokéDex:
+# PokeDex
 a simple Pokemon catalgue, built with HTML, CSS, JavaScript, React
 ## Link
 the website [link](https://pokedexreactapp99.netlify.app/)
