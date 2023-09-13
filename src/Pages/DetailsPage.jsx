@@ -1,44 +1,33 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import PokeDetails from '../components/PokeDetails';
-import { Link } from 'react-router-dom';
-Link
 
-export default function DetailsPage({pokemonName}) {
-  const [search, setSearch] = useState("");
-   const handleSubmit = (event) => {
-    setPokemonName(search);
-    event.preventDefault();
-  };
-const handleChange = () => {
+export default function DetailsPage() {
+  const [pokemonNames, setPokemonNames] = useState([]);
 
-}
+  useEffect(() => {
+    async function fetchPokemonNames() {
+      try {
+        const response = await axios.get('https://pokeapi.co/api/v2/pokemon?limit=150');
+        const data = response.data.results;
+
+        const names = data.map((pokemon) => pokemon.name);
+        setPokemonNames(names);
+      } catch (error) {
+        console.error('Error fetching Pokémon names:', error);
+      }
+    }
+
+    fetchPokemonNames();
+  }, []);
   return (
     <div className="DetailsPage">
       <header>
         <h1>Pokémon Details</h1>
-        <Link className='link' to='/pokemonlist'>
-            <button className='front-desc-button'>Go back</button>
-          </Link>
-          <form onSubmit={handleSubmit}>
-            <label className='front-desc-text search-label'>
-              Find pokemon by name:
-              <input
-                className='search-bar'
-                type='text'
-                value={search}
-                onChange={handleChange}
-              />
-              <button
-                className='front-desc-button'
-                type='submit'
-                value='submit'>
-                Search
-              </button>
-            </label>
-          </form>
       </header>
       <main>
-        <PokeDetails pokemonName={pokemonName} /> {}
+        {pokemonNames.map((name,index) => (
+           <PokeDetails key={index} pokemonName={name} />
+        ))}
       </main>
       <footer>
         <p>&copy; 2023 Pokémon Company</p>

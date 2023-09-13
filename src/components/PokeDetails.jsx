@@ -1,6 +1,8 @@
 import React from 'react'
 import { useState, useEffect } from 'react';
 import axios from 'axios';
+import Pokecard from './Pokecard';
+import "../Styles/pokeCard.css"
 
 export default function PokeDetails({pokemonName}) {
   const [pokemonData, setPokemonData] = useState(null);
@@ -15,8 +17,7 @@ export default function PokeDetails({pokemonName}) {
         console.error('Error fetching Pokémon data:', error);
       });
   }, [pokemonName]);
-console.log(pokemonData)
-console.log(pokemonName)
+
   if (!pokemonData) {
     return <p>Loading...</p>;
   }
@@ -25,6 +26,9 @@ console.log(pokemonName)
 
   return (
     <div className="pokemon-details">
+      <div className='pokecard-wrapper'>
+          <Pokecard ></Pokecard>
+        </div>
       <h2>{pokemonName}</h2>
       <h3>Abilities:</h3>
       <ul>

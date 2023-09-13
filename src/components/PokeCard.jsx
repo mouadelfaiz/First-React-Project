@@ -1,5 +1,6 @@
 import React from 'react'
 import {useState, useEffect} from 'react';
+import "../Styles/pokeCard.css"
 
 export default function Pokecard({pokemonId}) {
   const [pokemonData, setPokemonData] = useState(null);

@@ -25,15 +25,7 @@ input[type="text"] {
 }
 
 /* Style for each Pokecard (you can customize this further) */
-.pokemon-card {
-  border: 1px solid #ccc;
-  padding: 10px;
-  text-align: center;
-  background-color: #f9f9f9;
-  border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  transition: transform 0.2s ease-in-out;
-}
+
 
 .pokemon-card:hover {
   transform: translateY(-5px);
