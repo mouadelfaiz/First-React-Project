@@ -15,7 +15,8 @@ export default function PokeDetails({pokemonName}) {
         console.error('Error fetching Pokémon data:', error);
       });
   }, [pokemonName]);
-
+console.log(pokemonData)
+console.log(pokemonName)
   if (!pokemonData) {
     return <p>Loading...</p>;
   }
