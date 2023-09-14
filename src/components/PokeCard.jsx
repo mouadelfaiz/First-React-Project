@@ -20,8 +20,8 @@ export default function Pokecard({pokemonId}) {
             src={pokemonData.sprites.front_default}
             alt={pokemonData.name}
           />
-          <p>Height: {pokemonData.height / 10} m</p>
-          <p>Weight: {pokemonData.weight / 10} kg</p>
+          <p>Height: {pokemonData.height / 10} m</p> {/*one 1 decimeter = 10 meters*/}
+          <p>Weight: {pokemonData.weight / 10} kg</p> {/* 1 hectograms = 10 kilograms*/}
         </div>
       ) : (
         <p>Loading...</p>

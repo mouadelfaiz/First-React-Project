@@ -11,7 +11,7 @@ export default function DetailsPage() {
       try {
         const response = await axios.get('https://pokeapi.co/api/v2/pokemon?limit=150');
         const data = response.data.results;
-
+        cons
         const names = data.map((pokemon) => pokemon.name);
         setPokemonNames(names);
       } catch (error) {

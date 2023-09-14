@@ -7,7 +7,7 @@ the website [link](https://pokedexreactapp99.netlify.app/)
 * see every Pokemon Height and Wright
 * View basic details of each Pokemon
 * see images of the Pokemon
-* see more basic details about the pokemon
+* see more basic details about the pokemon like abilities and type
 ## Screen shot
 ![Alt text](/src/image/screen1.png)
 ![Alt text](/src/image/screen2.png)

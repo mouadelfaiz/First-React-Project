@@ -8,11 +8,11 @@ export default function PokeDetails({ pokemonName }) {
   const [pokemonImage, setPokemonImage] = useState(null);
 
   useEffect(() => {
-    async function fetchPokemonDetails() {
+    async function fetchPokemonDetails() { 
       try {
         const response = await axios.get(`https://pokeapi.co/api/v2/pokemon/${pokemonName}`);
         const data = response.data;
-
+        
         setPokemonData(data);
         setPokemonImage(data.sprites.front_default);
       } catch (error) {
