@@ -19,7 +19,7 @@ export default function NavBar() {
 function CustomLink({ to, children, ...props }) {
    const resolvedPath = useResolvedPath(to)
   const isActive = useMatch({path: resolvedPath.pathname, end: true})
-  // using end to make sure the hole path is indenticla
+  // using end to make sure the hole path is indenticle
   return (
     <li className={isActive ? "active" : ""}>
       <Link to={to} {...props}>
